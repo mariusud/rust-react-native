@@ -1,0 +1,17 @@
+/Users/mariusudnaes/Development/expo-rust-demo/modules/rust-module/android/src/main/java/expo/modules/rustmodule/RustModuleView.kt:10: Warning: Custom view RustModuleView is missing constructor used by tools: (Context) or (Context,AttributeSet) or (Context,AttributeSet,int) [ViewConstructor]
+class RustModuleView(context: Context, appContext: AppContext) : ExpoView(context, appContext) {
+      ~~~~~~~~~~~~~~
+
+   Explanation for issues of type "ViewConstructor":
+   Some layout tools (such as the Android layout editor) need to find a
+   constructor with one of the following signatures:
+   * View(Context context)
+   * View(Context context, AttributeSet attrs)
+   * View(Context context, AttributeSet attrs, int defStyle)
+
+   If your custom view needs to perform initialization which does not apply
+   when used in a layout editor, you can surround the given code with a check
+   to see if View#isInEditMode() is false, since that method will return false
+   at runtime but true within a user interface editor.
+
+0 errors, 1 warnings

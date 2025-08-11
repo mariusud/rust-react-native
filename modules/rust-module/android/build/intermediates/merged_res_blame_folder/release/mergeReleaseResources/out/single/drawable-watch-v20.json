@@ -1,0 +1,6 @@
+[
+    {
+        "merged": "expo.modules.rustmodule.rust-module-release-28:/drawable-watch-v20/abc_dialog_material_background.xml",
+        "source": "expo.modules.rustmodule.rust-module-appcompat-1.7.0-17:/drawable-watch-v20/abc_dialog_material_background.xml"
+    }
+]
