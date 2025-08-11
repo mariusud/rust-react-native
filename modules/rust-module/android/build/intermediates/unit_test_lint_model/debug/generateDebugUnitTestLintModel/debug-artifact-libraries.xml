@@ -1,9 +1,9 @@
 <libraries>
   <library
       name=":@@:rust-module::debug"
-      jars="/Users/mariusudnaes/.gradle/caches/8.13/transforms/a7786797211a253129d5c83de9e60881/transformed/out/jars/classes.jar:/Users/mariusudnaes/.gradle/caches/8.13/transforms/a7786797211a253129d5c83de9e60881/transformed/out/jars/libs/R.jar"
+      jars="/Users/mariusudnaes/.gradle/caches/8.13/transforms/70b4855d9d688cea0b216c71789e4ff6/transformed/out/jars/classes.jar:/Users/mariusudnaes/.gradle/caches/8.13/transforms/70b4855d9d688cea0b216c71789e4ff6/transformed/out/jars/libs/R.jar"
       resolved="expo.modules.rustmodule:rust-module:0.7.2"
-      folder="/Users/mariusudnaes/.gradle/caches/8.13/transforms/a7786797211a253129d5c83de9e60881/transformed/out"
+      folder="/Users/mariusudnaes/.gradle/caches/8.13/transforms/70b4855d9d688cea0b216c71789e4ff6/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
