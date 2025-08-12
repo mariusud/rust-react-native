@@ -1,4 +1,6 @@
 import ExpoModulesCore
+import native_rust_lib
+
 
 public class RustModule: Module {
   // Each module class must implement the definition function. The definition consists of components
