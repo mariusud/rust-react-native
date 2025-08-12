@@ -20,6 +20,6 @@ Pod::Spec.new do |s|
   }
   
   s.source_files = "**/*.{h,m,mm,swift,hpp,cpp}"
-  s.vendored_frameworks = 'rust/native_rust_lib.xcframework'
+  s.vendored_frameworks = 'native_rust_lib.xcframework'
 
 end

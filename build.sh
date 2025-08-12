@@ -4,8 +4,8 @@ set -euo pipefail
 # --- paths matching your tree ---
 CRATE_DIR="native_rust_lib"                # contains Cargo.toml
 CRATE_NAME="native_rust_lib"
-HEADERS_DIR="$(pwd)/ios-rust-headers"      # should contain native_rust_lib.h AND module.modulemap
-OUT_DIR="$(pwd)/ios/rust"                  # final *.xcframework goes here
+HEADERS_DIR="$(pwd)/modules/rust-module/ios/headers/"      # should contain native_rust_lib.h AND module.modulemap
+OUT_DIR="$(pwd)/modules/rust-module/ios"                  # final *.xcframework goes here
 
 # --- sanity checks ---
 [ -f "$CRATE_DIR/Cargo.toml" ] || { echo "❌ $CRATE_DIR/Cargo.toml not found"; exit 1; }
@@ -31,6 +31,7 @@ mkdir -p "$(dirname "$UNIVERSAL_SIM_LIB")"
 lipo -create -output "$UNIVERSAL_SIM_LIB" "$LIB_SIM_ARM64" "$LIB_SIM_X64"
 
 # --- package xcframework ---
+rm -rf "$OUT_DIR/${CRATE_NAME}.xcframework"
 mkdir -p "$OUT_DIR"
 xcodebuild -create-xcframework \
   -library "$LIB_DEV" -headers "$HEADERS_DIR" \
@@ -38,3 +39,6 @@ xcodebuild -create-xcframework \
   -output "$OUT_DIR/${CRATE_NAME}.xcframework"
 
 echo "✅ Created $OUT_DIR/${CRATE_NAME}.xcframework"
+
+rm -rf "$CRATE_DIR/target" 
+echo "✅ Cleaned up target directory"
