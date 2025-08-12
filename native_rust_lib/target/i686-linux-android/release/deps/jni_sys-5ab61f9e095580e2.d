@@ -1,7 +1,0 @@
-/Users/mariusudnaes/Development/expo-rust-demo/native_rust_lib/target/i686-linux-android/release/deps/jni_sys-5ab61f9e095580e2.d: /Users/mariusudnaes/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/jni-sys-0.3.0/src/lib.rs
-
-/Users/mariusudnaes/Development/expo-rust-demo/native_rust_lib/target/i686-linux-android/release/deps/libjni_sys-5ab61f9e095580e2.rlib: /Users/mariusudnaes/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/jni-sys-0.3.0/src/lib.rs
-
-/Users/mariusudnaes/Development/expo-rust-demo/native_rust_lib/target/i686-linux-android/release/deps/libjni_sys-5ab61f9e095580e2.rmeta: /Users/mariusudnaes/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/jni-sys-0.3.0/src/lib.rs
-
-/Users/mariusudnaes/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/jni-sys-0.3.0/src/lib.rs:
