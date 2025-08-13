@@ -40,3 +40,5 @@ android/
 ios/
 
 native_rust_lib/target/
+
+modules/rust-module/android/build/
