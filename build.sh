@@ -4,7 +4,7 @@ set -euo pipefail
 # --- paths matching your tree ---
 CRATE_DIR="native_rust_lib"                # contains Cargo.toml
 CRATE_NAME="native_rust_lib"
-HEADERS_DIR="$(pwd)/modules/rust-module/ios/headers/"      # should contain native_rust_lib.h AND module.modulemap
+HEADERS_DIR="$(pwd)/headers/"      # should contain native_rust_lib.h AND module.modulemap
 OUT_DIR="$(pwd)/modules/rust-module/ios/Frameworks"                  # final *.xcframework goes here
 
 # --- sanity checks ---

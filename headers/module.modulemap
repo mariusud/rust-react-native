@@ -1,0 +1,4 @@
+module native_rust_lib [system] {
+  header "native_rust_lib.h"
+  export *
+}
