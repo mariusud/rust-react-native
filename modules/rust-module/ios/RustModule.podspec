@@ -19,7 +19,8 @@ Pod::Spec.new do |s|
     'DEFINES_MODULE' => 'YES',
   }
 
-  s.source_files = "**/*.{h,m,mm,swift,hpp,cpp}"
-  s.vendored_frameworks = 'native_rust_lib.xcframework'
-
+  s.source_files = 'src/**/*.{h,m,mm,swift,hpp,cpp}'
+  s.ios.vendored_frameworks = [
+    "Frameworks/native_rust_lib.xcframework",
+  ]
 end
