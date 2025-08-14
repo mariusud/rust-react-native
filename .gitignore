@@ -36,9 +36,11 @@ yarn-error.*
 # typescript
 *.tsbuildinfo
 
-android/
-ios/
+/android/
+/ios/
 
 native_rust_lib/target/
+native_rust_lib/build/
+native_rust_lib/generated/
 
 modules/rust-module/android/build/
