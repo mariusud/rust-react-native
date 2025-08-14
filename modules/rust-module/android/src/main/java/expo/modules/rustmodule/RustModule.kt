@@ -3,6 +3,7 @@ package expo.modules.rustmodule
 import expo.modules.kotlin.modules.Module
 import expo.modules.kotlin.modules.ModuleDefinition
 import android.util.Log
+import uniffi.native_rust_lib.add
 
 class RustModule : Module() {
   // Each module class must implement the definition function. The definition consists of components
@@ -20,8 +21,6 @@ class RustModule : Module() {
     }
   }
 
-  external fun rustAdd(a: Int, b: Int): Int
-  
 
   override fun definition() = ModuleDefinition {
     // Sets the name of the module that JavaScript code will use to refer to the module. Takes a string as an argument.
@@ -44,7 +43,7 @@ class RustModule : Module() {
 
     AsyncFunction("rustAdd") { a: Int, b: Int ->
       Log.d("RustModule", "rustAdd called with parameters: a = $a, b = $b")
-      val result = rustAdd(a, b)
+      val result = add(a.toLong(), b.toLong() )
       Log.d("RustModule", "rustAdd result: $result")
       result
     }

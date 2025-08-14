@@ -11,16 +11,17 @@ Pod::Spec.new do |s|
   }
   s.source         = { git: '' }
   s.static_framework = true
+  s.swift_version    = '5.9'           
 
   s.dependency 'ExpoModulesCore'
 
   # Swift/Objective-C compatibility
   s.pod_target_xcconfig = {
-    'DEFINES_MODULE' => 'YES',
+  'DEFINES_MODULE' => 'YES',
   }
 
-  s.source_files = 'src/**/*.{h,m,mm,swift,hpp,cpp}'
-  s.ios.vendored_frameworks = [
-    "Frameworks/native_rust_lib.xcframework",
-  ]
+  s.source_files = '**/*.{h,m,mm,swift,hpp,cpp}'
+  s.vendored_frameworks = 'native_rust_lib.xcframework'
+  # s.vendored_libraries = 'rust/libnative_rust.a'
+  
 end

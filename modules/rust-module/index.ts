@@ -1,5 +1,3 @@
-// Reexport the native module. On web, it will be resolved to RustModule.web.ts
-// and on native platforms to RustModule.ts
 export { default } from "./src/RustModule";
 export * from "./src/RustModule.types";
 
