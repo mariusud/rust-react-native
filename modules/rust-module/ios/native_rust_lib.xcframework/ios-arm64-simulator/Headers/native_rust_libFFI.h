@@ -126,17 +126,17 @@ typedef void (*UniffiForeignFutureCompleteI16)(uint64_t, UniffiForeignFutureStru
     );
 
 #endif
-#ifndef UNIFFI_FFIDEF_FOREIGN_FUTURE_STRUCT_U32
-#define UNIFFI_FFIDEF_FOREIGN_FUTURE_STRUCT_U32
-typedef struct UniffiForeignFutureStructU32 {
+#ifndef UNIFFI_FFIDEF_FOREIGN_FUTURE_STRUCT_usize
+#define UNIFFI_FFIDEF_FOREIGN_FUTURE_STRUCT_usize
+typedef struct UniffiForeignFutureStructusize {
     uint32_t returnValue;
     RustCallStatus callStatus;
-} UniffiForeignFutureStructU32;
+} UniffiForeignFutureStructusize;
 
 #endif
-#ifndef UNIFFI_FFIDEF_FOREIGN_FUTURE_COMPLETE_U32
-#define UNIFFI_FFIDEF_FOREIGN_FUTURE_COMPLETE_U32
-typedef void (*UniffiForeignFutureCompleteU32)(uint64_t, UniffiForeignFutureStructU32
+#ifndef UNIFFI_FFIDEF_FOREIGN_FUTURE_COMPLETE_usize
+#define UNIFFI_FFIDEF_FOREIGN_FUTURE_COMPLETE_usize
+typedef void (*UniffiForeignFutureCompleteusize)(uint64_t, UniffiForeignFutureStructusize
     );
 
 #endif
@@ -356,24 +356,24 @@ void ffi_native_rust_lib_rust_future_free_i16(uint64_t handle
 int16_t ffi_native_rust_lib_rust_future_complete_i16(uint64_t handle, RustCallStatus *_Nonnull out_status
 );
 #endif
-#ifndef UNIFFI_FFIDEF_FFI_NATIVE_RUST_LIB_RUST_FUTURE_POLL_U32
-#define UNIFFI_FFIDEF_FFI_NATIVE_RUST_LIB_RUST_FUTURE_POLL_U32
-void ffi_native_rust_lib_rust_future_poll_u32(uint64_t handle, UniffiRustFutureContinuationCallback _Nonnull callback, uint64_t callback_data
+#ifndef UNIFFI_FFIDEF_FFI_NATIVE_RUST_LIB_RUST_FUTURE_POLL_usize
+#define UNIFFI_FFIDEF_FFI_NATIVE_RUST_LIB_RUST_FUTURE_POLL_usize
+void ffi_native_rust_lib_rust_future_poll_usize(uint64_t handle, UniffiRustFutureContinuationCallback _Nonnull callback, uint64_t callback_data
 );
 #endif
-#ifndef UNIFFI_FFIDEF_FFI_NATIVE_RUST_LIB_RUST_FUTURE_CANCEL_U32
-#define UNIFFI_FFIDEF_FFI_NATIVE_RUST_LIB_RUST_FUTURE_CANCEL_U32
-void ffi_native_rust_lib_rust_future_cancel_u32(uint64_t handle
+#ifndef UNIFFI_FFIDEF_FFI_NATIVE_RUST_LIB_RUST_FUTURE_CANCEL_usize
+#define UNIFFI_FFIDEF_FFI_NATIVE_RUST_LIB_RUST_FUTURE_CANCEL_usize
+void ffi_native_rust_lib_rust_future_cancel_usize(uint64_t handle
 );
 #endif
-#ifndef UNIFFI_FFIDEF_FFI_NATIVE_RUST_LIB_RUST_FUTURE_FREE_U32
-#define UNIFFI_FFIDEF_FFI_NATIVE_RUST_LIB_RUST_FUTURE_FREE_U32
-void ffi_native_rust_lib_rust_future_free_u32(uint64_t handle
+#ifndef UNIFFI_FFIDEF_FFI_NATIVE_RUST_LIB_RUST_FUTURE_FREE_usize
+#define UNIFFI_FFIDEF_FFI_NATIVE_RUST_LIB_RUST_FUTURE_FREE_usize
+void ffi_native_rust_lib_rust_future_free_usize(uint64_t handle
 );
 #endif
-#ifndef UNIFFI_FFIDEF_FFI_NATIVE_RUST_LIB_RUST_FUTURE_COMPLETE_U32
-#define UNIFFI_FFIDEF_FFI_NATIVE_RUST_LIB_RUST_FUTURE_COMPLETE_U32
-uint32_t ffi_native_rust_lib_rust_future_complete_u32(uint64_t handle, RustCallStatus *_Nonnull out_status
+#ifndef UNIFFI_FFIDEF_FFI_NATIVE_RUST_LIB_RUST_FUTURE_COMPLETE_usize
+#define UNIFFI_FFIDEF_FFI_NATIVE_RUST_LIB_RUST_FUTURE_COMPLETE_usize
+uint32_t ffi_native_rust_lib_rust_future_complete_usize(uint64_t handle, RustCallStatus *_Nonnull out_status
 );
 #endif
 #ifndef UNIFFI_FFIDEF_FFI_NATIVE_RUST_LIB_RUST_FUTURE_POLL_I32
